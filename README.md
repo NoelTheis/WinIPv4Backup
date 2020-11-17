@@ -8,7 +8,7 @@ My approach just uses System.Net.NetworkInformation to get some information abou
 I then use regedit to get or set the ipv4 registry values corresponding to the networkinterface, using the key:
 Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\ + the interfaces guid
 
-The gateway does only properly set after a restart of the adapter, which is easily done through net sh.
+The gateway does only properly set after a restart of the adapter, which I do through net sh.
 
 The only none microsoft tool/library used here is the Newtonsoft.Json library, which I use to save/load the ipv4 settings and some additional information to/from a Json file.
 
